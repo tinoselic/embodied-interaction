@@ -3,28 +3,21 @@
   src: url("assets/Jost-Regular.ttf");
 }
 
-@font-face {
-  font-family: "Audiowide";
-  src: url("assets/Audiowide-Regular.ttf");
-}
-
 * {
   padding: 0;
   margin: 0;
   list-style: none;
   box-sizing: border-box;
-}
-
-body {
-  background: #000000;
   color: #999999;
   font-family: "Jost Regular", sans-serif;
 }
 
+body {
+  background: #000000;
+}
+
 nav {
   background: #000000;
-  font-family: "Audiowide";
-  color: #999999;
   width: 100%;
   height: 50px;
   position: fixed;
@@ -55,7 +48,6 @@ post-nav {
 
 .course-name {
   padding-top: 75px;
-  font-family: "Jost Regular";
   font-size: medium;
   line-height: 1;
   display: grid;
@@ -68,14 +60,12 @@ post-nav {
 
 .content-name {
   margin-top: 75px;
-  font-family: "Audiowide";
   color: #ffffff;
   font-size: x-large;
   line-height: 1;
 }
 
 .introduction {
-  font-family: "Jost Regular";
   font-size: large;
   margin-top: 25px;
 }
@@ -83,37 +73,31 @@ post-nav {
 .post {
   column-gap: 25px;
   margin-top: 75px;
-  font-family: "Jost Regular";
 }
 
 .post-title {
   color: #ffffff;
-  font-family: "Jost Regular";
   font-size: large;
   line-height: 1;
 }
 
 .post-date {
   margin: 5px 0px 25px 0px;
-  font-family: "Jost Regular";
 }
 
 .text-container {
   max-width: 100%;
   grid-column: 1 / span 1;
-  font-family: "Jost Regular";
   font-size: large;
   line-height: 1.5;
 }
 
 .code-title {
-  font-family: "Jost Regular";
   font-size: large;
   color:#ffffff;
 }
 
 .code-content {
-  font-family: "Jost Regular";
   max-width: 25%;
 }
 
@@ -141,7 +125,6 @@ post-nav {
 
 .footer {
   margin: 25px 0px 25px 0px;
-  font-family: "Jost Regular";
   text-align: center;
   font-size: x-small;
 }

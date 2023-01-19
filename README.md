@@ -1,6 +1,6 @@
-# Physical Computing Course Documentation
+# Embodied Interaction Course Documentation
 
-Documentation website for the Physical Computing course (autumn 2022) of the New Media major at Aalto University.
+Documentation website for the Embodied Interaction course (spring 2023) of the New Media major at Aalto University.
 
 ## Setup
 
