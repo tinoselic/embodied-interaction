@@ -1,66 +1,227 @@
 @font-face {
-  font-family: "Monument";
-  src: url("assets/MonumentGrotesk-Regular.ttf");
+  font-family: "Jost Regular";
+  src: url("assets/Jost-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Audiowide";
+  src: url("assets/Audiowide-Regular.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: "Monument", sans-serif;
+  background: #000000;
+  color: #999999;
+  font-family: "Jost Regular", sans-serif;
 }
 
-.header {
-  margin: 100px 10vw 50px 10vw;
+nav {
+  background: #000000;
+  font-family: "Audiowide";
+  color: #999999;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  z-index: 1;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  padding: 0px 10px 0 10px;
+  display: block;
+  font-size: large;
+  line-height: 50px;
+}
+
+post-nav {
+  display: none;
+}
+
+.course-name {
+  padding-top: 75px;
+  font-family: "Jost Regular";
+  font-size: medium;
+  line-height: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .content {
-  margin: 0px 10vw;
+  margin: 0px 25px 0px;
 }
 
-.degree-name {
+.content-name {
+  margin-top: 75px;
+  font-family: "Audiowide";
+  color: #ffffff;
   font-size: x-large;
   line-height: 1;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
 }
-.student-name {
-  font-size: xxx-large;
-}
-.student-bio {
-  max-width: 50%;
+
+.introduction {
+  font-family: "Jost Regular";
   font-size: large;
-  line-height: 1.5;
+  margin-top: 25px;
 }
-.course-name {
-  margin-top: 100px;
-  font-size: xxx-large;
-}
+
 .post {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   column-gap: 25px;
-  margin-bottom: 50px;
+  margin-top: 75px;
+  font-family: "Jost Regular";
 }
-.post-title-date {
-  margin-bottom: 25px;
-  font-size: x-large;
+
+.post-title {
+  color: #ffffff;
+  font-family: "Jost Regular";
+  font-size: large;
   line-height: 1;
 }
+
+.post-date {
+  margin: 5px 0px 25px 0px;
+  font-family: "Jost Regular";
+}
+
 .text-container {
+  max-width: 100%;
   grid-column: 1 / span 1;
+  font-family: "Jost Regular";
   font-size: large;
   line-height: 1.5;
 }
 
-.image-container {
-  grid-column: 2 / span 1;
+.code-title {
+  font-family: "Jost Regular";
+  font-size: large;
+  color:#ffffff;
+}
+
+.code-content {
+  font-family: "Jost Regular";
+  max-width: 25%;
 }
 
 .image-style {
+  margin-bottom: 25px;
   max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
 }
 
 .footer {
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin: 25px 0px 25px 0px;
+  font-family: "Jost Regular";
   text-align: center;
   font-size: x-small;
+}
+
+nav a:link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+nav a:visited {
+  color: #ffffff;
+}
+
+nav a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+nav a:active {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+a:link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .content {
+    margin: 0 150px;
+  }
+
+  nav ul li a {
+    padding: 0px 30px 0 30px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .content {
+    margin: 0 400px;
+  }
+
+  nav {
+    background: none;
+    width: 0%;
+    height: 0px;
+    margin: 60px 0px 0px 200px;
+  }
+  
+  nav ul {
+    display: block;
+    flex-wrap: wrap;
+    justify-content: left;
+    text-align: left;
+  }
+  
+  nav ul li {
+    display: list-item;
+  }
+  
+  nav ul li a {
+    color: #808080;
+    font-size: large;
+    line-height: 50px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .content {
+    margin: 0 600px;
+  }
 }
