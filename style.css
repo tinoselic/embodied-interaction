@@ -68,6 +68,7 @@ post-nav {
 .introduction {
   font-size: large;
   margin-top: 25px;
+  line-height: 1.5;
 }
 
 .post {
