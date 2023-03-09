@@ -41,7 +41,7 @@
     </div>
     <div class="content-name">Course Documentation</div>
     <div class="introduction">
-      Short project summary
+      Interactive Night Sky
     </div>
     <section class="post">
       <!-- <a name="post1"> -->
@@ -66,105 +66,40 @@
     <section class="post">
       <!-- <a name="post2"> -->
       <div class="post-title">2. Final Project: Proposal</div>
-      <div class="post-date">Posted 07.03.23</div>
+      <div class="post-date">Posted 09.03.23</div>
       <div class="text-container">
         <img class="image-style" src="images/Concept_0.jpg" alt="Concept_0" />
         <img class="image-style" src="images/Concept_1.jpg" alt="Concept_1" />
         <img class="image-style" src="images/Concept_2.jpg" alt="Concept_2" />
         <br />
-        <br />
         IDEA
         <br />
-        A starry night sky is projected onto the ceiling of a dark space. Depending on the positions of the visitors in
-        the space, star constellations are generated. If a visitor stands in the center of the space auroras will
-        appear. This person can control the appearance of auroras by moving their arms and hands.
+        A starry night sky is projected onto the ceiling of a dark space. Depending on the position of the visitor in
+        the space, star constellations temporarily appear and reform when the visitors move. If a visitor stands in a
+        certain spot, they can then use their hands to paint northern lights on the sky. This installation will not
+        represent the real sky.
         <br />
         <br />
         CONCEPT
         <br />
-        In touchdesigner I create a black canvas with small glowing white circles that appear on random positions and
-        resemble stars. I track the positions of multiple people (Lidar?) and capture the data in certain time
-        intervals. I then convert this data into specific star constillations that appear for a limited time by
-        connecting certain circles/stars with white/grey lines.
+        In touchdesigner I plan to create the starry night sky with small white glowing circles that appear on random
+        positions and random sizes. I will track the positions of multiple people (Lidar?) and capture their coordinates
+        in certain time intervals. I will then convert this data into specific star constillations by connecting certain
+        stars with lines. To make them appear and disappear smoothly, I need to work with opacity transitions and
+        delays.
         <br />
-        The appearance of auroras could be realised with a particle system of white, green and red/purple colored shapes
-        (lines, circles, sprites?). This effect is put ontop of the night sky as a partly transparent layer. The visitor
-        positioned closest to the center of the space is regognized to make the auroras appear. This persons wrists are
-        tracked and depending on the wrists movement the aurora motion will be affected (translate, scale, distort,
-        displace). Alternatively, the aurora effect could be simulated by using light that is casted into the space onto
-        the visitors. The color of the light would change with the movement of the controler's wrist.
-      </div>
-      <!-- </a> -->
-    </section>
-    <section class="post">
-      <!-- <a name="post3"> -->
-      <div class="post-title">03 | Title</div>
-      <div class="post-date">Posted XX.XX.23</div>
-      <div class="text-container">
-        <img class="image-style" src="images/Arduino_Basics_1.jpg" alt="Picture" />
+        The painting of the northern lights could be realised with a blurry colorful brush that follows the controler's
+        hand. It only draws on the sky, when the controler does a painting gesture by pinching their index finger and
+        thumb together (like holding a pen). For this I need to track the positions of the painter's fingers, detect the
+        painting gesture and then spawn shapes on the tracked positions. The paintings of the northern lights will
+        slowly disappear after a while to clear the canvas for new painters. To realize this I will need to kill the
+        shapes after a certain time (delay, opacity). I also plan to let the painter control size (z-position), color
+        (y-position) and intesity (movement speed) of the brush.
         <br />
         <br />
-        Text goes here.
-      </div>
-      <!-- </a> -->
-    </section>
-    <section class="post">
-      <!-- <a name="post4"> -->
-      <div class="post-title">04 | Title</div>
-      <div class="post-date">Posted XX.XX.23</div>
-      <div class="text-container">
-        <img class="image-style" src="images/Arduino_Basics_1.jpg" alt="Picture" />
+        CHALLENGES
         <br />
-        <br />
-        Text goes here.
-      </div>
-      <!-- </a> -->
-    </section>
-    <section class="post">
-      <!-- <a name="post5"> -->
-      <div class="post-title">05 | Title</div>
-      <div class="post-date">Posted XX.XX.23</div>
-      <div class="text-container">
-        <img class="image-style" src="images/Arduino_Basics_1.jpg" alt="Picture" />
-        <br />
-        <br />
-        Text goes here.
-      </div>
-      <!-- </a> -->
-    </section>
-    <section class="post">
-      <!-- <a name="post6"> -->
-      <div class="post-title">06 | Title</div>
-      <div class="post-date">Posted XX.XX.23</div>
-      <div class="text-container">
-        <img class="image-style" src="images/Arduino_Basics_1.jpg" alt="Picture" />
-        <br />
-        <br />
-        Text goes here.
-      </div>
-      <!-- </a> -->
-    </section>
-    <section class="post">
-      <!-- <a name="post7"> -->
-      <div class="post-title">07 | Title</div>
-      <div class="post-date">Posted XX.XX.23</div>
-      <div class="text-container">
-        <img class="image-style" src="images/Arduino_Basics_1.jpg" alt="Picture" />
-        <br />
-        <br />
-        Text goes here.
-      </div>
-      <!-- </a> -->
-    </section>
-    <section class="post">
-      <!-- <a name="post8"> -->
-      <div class="post-title">08 | Title</div>
-      <div class="post-date">Posted XX.XX.23</div>
-      <div class="text-container">
-        <img class="image-style" src="images/Arduino_Basics_1.jpg" alt="Picture" />
-        <br />
-        <br />
-        Text goes here.
+        Space & Setup, Precise Tracking, Authentic Visuals
       </div>
       <!-- </a> -->
     </section>
