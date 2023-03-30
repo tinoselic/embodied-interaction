@@ -61,7 +61,7 @@
         <br />
         <img class="image-style" src="images/Concept_1.jpg" alt="Concept_1" />
         <br />
-        In touchdesigner I plan to create the starry night sky with small white glowing circles that appear on random
+        In TouchDesigner I plan to create the starry night sky with small white glowing circles that appear on random
         positions and random sizes. I will track the positions of multiple people (Lidar?) and capture their coordinates
         in certain time intervals. I will then convert this data into specific star constillations by connecting certain
         stars with lines. To make them appear and disappear smoothly, I need to work with opacity transitions and
@@ -83,10 +83,10 @@
       </div>
     </section>
     <section class="post">
-      <div class="post-title">3. Final Project: Getting Started</div>
+      <div class="post-title">3. Final Project: Prototyping</div>
       <div class="post-date">Last updated 30.03.23</div>
       <div class="text-container">
-        I decided to only focus on creating auroras and abandon the idea of creating star constellations, since auroras
+        I decided to focus only on creating auroras and abandon the idea of creating star constellations, since auroras
         are more exciting and they seem easier to realize.
         <br />
         <br />
@@ -98,7 +98,8 @@
           </iframe>
         </div>
         <br />
-        Helpful video for mouse tracking and trailing as interactive prototype
+        This video helped me create an interactive prototype that draws a trail of the mouse cursor. I would later
+        replace the position of the mouse cursor with the tracked data from the Kinect Azure.
         <br />
         <br />
         <div class="responsive-video">
@@ -109,17 +110,26 @@
           </iframe>
         </div>
         <br />
-        Helpful video for feedback loop for aurora effect
+        To achieve a visually authentic Aurora effect, our tutor Calvin recommended me this video where I learned about
+        feedback loops in TouchDesigner. <br />
         <br />
+        <img class="image-style" src="images/Aurora_Touchdesigner_First_Attempt.jpg"
+          alt="Aurora_Touchdesigner_First_Attempt" />
         <br />
-        <img class="image-style" src="images/Aurora_Touchdesigner_First_Attempt.jpg" alt="Aurora_Touchdesigner_First_Attempt" />
-        <br />
-        First attempt. Transformation in y-axis, blur, ramp with gradient (white > green > red > alpha 0), noise, composition.
+        In the feedback loop, I added a transformation node so that the auroras would slowly move up (continuously
+        decreasing the y-values) and slightly wiggle left and right (noise on x-values). Blur nodes enhanced the look by
+        making everything smoother, especially the hard line of the trail. After watching reference material, Calvin and
+        I noticed vertical stripes in auroras. Calvin helped me add animated noise in x-orientation to simulate those
+        stripes. Lastly, I colored the auroras by using a ramp node with a vertical gradient of colors from white to
+        green and red with decreasing alpha levels. I then connected everything together via composition nodes and
+        multiply functions.
         <br />
         <br />
         <img class="image-style" src="images/Aurora_Mouse_Interaction.jpg" alt="Aurora_Touchdesigner_First_Attempt" />
         <br />
-        Satisfying first result. Visual improvements possible.
+        The result was quite convincing as the visuals already resembled auroras. However, some improvements were still
+        needed. The colors should be less saturated, and the gradient and stripes should only affect the trail and not
+        the entire screen.
       </div>
     </section>
     <section class="post">
