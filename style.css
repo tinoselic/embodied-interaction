@@ -18,51 +18,66 @@ body {
 
 nav {
   background: #000000;
-  width: 100%;
-  height: 50px;
+  box-shadow: 0px 1px;
   position: fixed;
+  width: 100%;
+  height: fit-content;
+  top: 0;
   z-index: 1;
 }
 
-nav ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
+nav .logo {
+  padding-left: 24px;
+  width: fit-content;
 }
 
-nav ul li {
-  display: inline-block;
-}
-
-nav ul li a {
-  padding: 0px 20px 0 20px;
+nav .openMenu {
   display: block;
-  font-size: large;
-  line-height: 50px;
+  position: absolute;
+  top: 18px;
+  right: 24px;
 }
 
-post-nav {
+nav .openMenu img {
+  height: 22px;
+  cursor: pointer;
+}
+
+nav .mainMenu {
   display: none;
+  height: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  top: 0;
+  transition: top 1s ease;
 }
 
-.course-name {
-  padding-top: 75px;
-  font-size: medium;
-  line-height: 1;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+nav .mainMenu li {
+  padding-left: 24px;
 }
 
-.content {
-  margin: 0px 25px 0px;
-}
-
-.content-name {
-  margin-top: 75px;
+nav .mainMenu li a {
   color: #ffffff;
-  font-size: x-large;
-  line-height: 1;
+  line-height: 60px;
+}
+
+nav .mainMenu .closeMenu {
+  display: block;
+  position: absolute;
+  top: 18px;
+  right: 24px;
+  cursor: pointer;
+}
+
+nav .mainMenu .closeMenu img {
+  height: 22px;
+}
+
+main {
+  margin: 0px 24px 0px;
+  padding-top: 84px;
 }
 
 .introduction {
@@ -76,14 +91,31 @@ post-nav {
   margin-top: 75px;
 }
 
-.post-title {
+h1 {
   color: #ffffff;
-  font-size: large;
+  font-size: x-large;
+  font-weight: normal;
   line-height: 1;
 }
 
-.post-date {
-  margin: 5px 0px 25px 0px;
+h2 {
+  color: #ffffff;
+  font-size: large;
+  font-weight: normal;
+  line-height: 1;
+}
+
+h3 {
+  color: #ffffff;
+  font-size: medium;
+  font-weight: normal;
+}
+
+h4 {
+  color: #ffffff;
+  font-size: medium;
+  font-weight: normal;
+  line-height: 60px;
 }
 
 .text-container {
@@ -103,10 +135,17 @@ post-nav {
 }
 
 .image-style {
-  margin-bottom: 25px;
+  margin-bottom: 24px;
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.responsive-video {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
 }
 
 .responsive-video video {
@@ -125,15 +164,8 @@ post-nav {
   height: 100%;
 }
 
-.responsive-video {
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%;
-  height: 0;
-}
-
 .footer {
-  margin: 25px 0px 25px 0px;
+  margin: 24px 0px 24px 0px;
   text-align: center;
   font-size: x-small;
 }
@@ -143,77 +175,101 @@ nav a:link {
   color: #ffffff;
 }
 
-nav a:visited {
+nav .mainMenu a:hover {
+  text-decoration: underline;
   color: #ffffff;
 }
 
-nav a:hover {
-  color: #ffffff;
+nav .mainMenu a:active {
   text-decoration: underline;
-}
-
-nav a:active {
   color: #ffffff;
-  text-decoration: underline;
 }
 
 a:link {
+  text-decoration: underline;
   color: #ffffff;
-  text-decoration: none;
 }
 
 a:hover {
-  color: #ffffff;
   text-decoration: underline;
+  color: #999;
 }
 
 a:visited {
-  color: #ffffff;
   text-decoration: none;
 }
 
 @media only screen and (min-width: 768px) {
-  .content {
-    margin: 0 150px;
+  nav {
+    display: flex;
+    justify-content: space-between;
   }
 
-  nav ul li a {
-    padding: 0px 30px 0 30px;
+  nav .logo {
+    padding-left: 150px;
+  }
+
+  nav .openMenu {
+    display: none;
+  }
+
+  nav .mainMenu {
+    padding: 0px 150px 0px 0px;
+    height: fit-content;
+    flex-wrap: wrap;
+    display: inline-block;
+  }
+  
+  nav .mainMenu li {
+    padding-left: 24px;
+    display: inline-block;
+  }
+
+  nav .mainMenu li a {
+    line-height: 60px;
+  }
+
+  nav .mainMenu .closeMenu {
+    display: none;
+  }
+
+  .main {
+    margin: 0 200px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
-  .content {
-    margin: 0 400px;
+  nav .logo {
+    padding-left: 400px;
   }
 
-  nav {
-    background: none;
-    width: 0%;
-    height: 0px;
-    margin: 60px 0px 0px 200px;
+  nav .mainMenu {
+    padding-right: 400px;
   }
-  
-  nav ul {
-    display: block;
-    flex-wrap: wrap;
-    justify-content: left;
-    text-align: left;
+
+  nav .mainMenu li {
+    padding-left: 36px;
   }
-  
-  nav ul li {
-    display: list-item;
-  }
-  
-  nav ul li a {
-    color: #808080;
-    font-size: large;
-    line-height: 50px;
+
+  main {
+    margin: 0 400px;
   }
 }
 
 @media only screen and (min-width: 1920px) {
-  .content {
+  nav .logo {
+    padding-left: 600px;
+  }
+
+  nav .mainMenu {
+    padding-right: 400px;
+  }
+
+  nav .mainMenu li {
+    padding-left: 48px;
+  }
+
+  main {
     margin: 0 600px;
   }
 }
