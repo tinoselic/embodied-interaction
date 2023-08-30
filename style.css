@@ -34,7 +34,7 @@ nav .logo {
 nav .openMenu {
   display: block;
   position: absolute;
-  top: 14px;
+  top: 15px;
   right: 24px;
 }
 
@@ -61,12 +61,13 @@ nav .mainMenu li {
 nav .mainMenu li a {
   color: #ffffff;
   line-height: 60px;
+  text-underline-offset: 3px;
 }
 
 nav .mainMenu .closeMenu {
   display: block;
   position: absolute;
-  top: 14px;
+  top: 15px;
   right: 24px;
   cursor: pointer;
 }
@@ -78,6 +79,7 @@ nav .mainMenu .closeMenu img {
 main {
   margin: 0px 24px 0px;
   padding-top: 84px;
+  display: block;
 }
 
 .introduction {
@@ -184,7 +186,8 @@ a:hover {
 }
 
 a:visited {
-  text-decoration: none;
+  text-decoration: underline;
+  color: #ffffff;
 }
 
 @media only screen and (min-width: 768px) {
@@ -222,7 +225,7 @@ a:visited {
   }
 
   main {
-    margin: 0 200px;
+    margin: 0 150px;
   }
 }
 
