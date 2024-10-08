@@ -27,22 +27,22 @@
   <main>
     <p>Embodied Interaction&mdash;Tino Selic</p>
     <br>
+    <br>
     <h1>Course Documentation</h1>
     <br>
-    <h2>Creating an Interactive Aurora Painting Installation</h2>
+    <h2>How to paint Virtual Auroras via an Interactive Programme</h2>
+    <br>
     <br>
     <br>
     <h3>1. Gesture Assignment</h3>
-    <p>Last updated 07.02.23</p>
-    <br>
+    <p><i>Last updated 08.10.24</i></p>
     <div class="responsive-video">
       <video width="640" height="360" controls controlsList="nodownload">
         <source src="../videos/Gesture_Assignment_Presentation.mp4" type="video/mp4">
       </video>
     </div>
-    <br>
     <p>
-      In this group work Guus, Simon, Yan and I had to think about a gesture that we use in our everyday life. This
+      In this group work, our team had to think about a gesture that we use in our everyday life. This
       gesture should then be used for a concept of a gestural interface. We chose to work with the hand gesture used
       to improve hearing when trying to listen closely. We then thought about a narrative and came up with a story
       about an encaptured snake that is revealed by doing the gesture. On a wall there is a projection of a grey and
@@ -51,19 +51,16 @@
     </p>
     <br>
     <br>
-    <h3>2. Final Project: Proposal</h3>
-    <p>Last updated 09.03.23</p>
     <br>
+    <h3>2. Final Project: Proposal</h3>
+    <p><i>Last updated 08.10.24</i></p>
     <img class="image-style" src="../images/Concept_0.jpg" alt="Concept_0" />
     <p>
       A starry night sky is projected onto the ceiling of a dark space. Depending on the position of the visitor in
       the space, star constellations temporarily appear and reform when the visitors move. If a visitor stands in a
       certain spot, they can then use their hands to paint northern lights on the sky.
     </p>
-    <br>
-    <br>
     <img class="image-style" src="../images/Concept_1.jpg" alt="Concept_1" />
-    <br>
     <p>
       In TouchDesigner I plan to create the starry night sky with small white glowing circles that appear on random
       positions and random sizes. I will track the positions of multiple people (Lidar?) and capture their coordinates
@@ -71,10 +68,7 @@
       stars with lines. To make them appear and disappear smoothly, I need to work with opacity transitions and
       delays.
     </p>
-    <br>
-    <br>
     <img class="image-style" src="../images/Concept_2.jpg" alt="Concept_2" />
-    <br>
     <p>
       The painting of the northern lights could be realised with a blurry colorful brush that follows the controller's
       hand. It only draws on the sky, when the controller does a painting gesture by pinching their index finger and
@@ -85,46 +79,40 @@
       (movement speed) of the brush.
       <br>
       <br>
-      Challenges: Location & Setup, Precise Tracking, Authentic Visuals
+      <i>Challenges: Location & Setup, Precise Tracking, Authentic Visuals</i>
     </p>
     <br>
     <br>
+    <br>
     <h3>3. Final Project: Prototyping</h3>
-    <p>Last updated 30.03.23</p>
+    <p><i>Last updated 30.03.23</i></p>
     <br>
     <p>
       I decided to focus only on creating auroras and abandon the idea of creating star constellations, since auroras
       are more exciting and they seem easier to realize.
     </p>
-    <br />
-    <br />
     <div class="responsive-video">
       <iframe width="640" height="360" src="https://www.youtube.com/embed/vfOKWkGPZts" title="YouTube video player"
         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen>
       </iframe>
     </div>
-    <br>
     <p>
       This video helped me create an interactive prototype that draws a trail of the mouse cursor. I would later
       replace the position of the mouse cursor with the tracked data from the Azure Kinect.
     </p>
-    <br>
     <div class="responsive-video">
       <iframe width="640" height="360" src="https://www.youtube.com/embed/JkKHKsY31no" title="YouTube video player"
         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen>
       </iframe>
     </div>
-    <br>
     <p>
       To achieve a visually authentic Aurora effect, our tutor Calvin recommended me this video where I learned about
       feedback loops in TouchDesigner.
     </p>
-    <br>
     <img class="image-style" src="../images/Aurora_Touchdesigner_First_Attempt.jpg"
       alt="Aurora_Touchdesigner_First_Attempt" />
-    <br>
     <p>
       In the feedback loop, I added a transformation node so that the auroras would slowly move up (continuously
       decreasing the y-values) and slightly wiggle left and right (noise on x-values). Blur nodes enhanced the look by
@@ -134,9 +122,7 @@
       from white to green and red with decreasing alpha levels. I then connected everything together via composition
       nodes and multiply functions.
     </p>
-    <br>
     <img class="image-style" src="../images/Aurora_Mouse_Interaction.jpg" alt="Aurora_Touchdesigner_First_Attempt" />
-    <br>
     <p>
       The result was quite convincing as the visuals already resembled auroras. However, some improvements were still
       needed. The colors should be less saturated, and the gradient and streaks should only affect the trail and not
@@ -144,11 +130,10 @@
     </p>
     <br>
     <br>
+    <br>
     <h3>4. Final Project: Tracking with Azure Kinect</h3>
-    <p>Last updated 30.03.23</p>
-    <br>
+    <p><i>Last updated 30.03.23</i></p>
     <img class="image-style" src="../images/20230330_101018.jpg" alt="Kinect_Setup" />
-    <br>
     <p>The next step was to replace the mouse cursor tracking with the Azure Kinect, which is capable of tracking
       hands. I followed Matti's tutorials on the course website to properly set up blob tracking with the Kinect in
       TouchDesigner. The tracking was quite jumpy and I had to do adjustments to deal with hard edges that appeared,
@@ -157,11 +142,10 @@
     </p>
     <br>
     <br>
+    <br>
     <h3>5. Final Project: Final Setup and Presentation</h3>
-    <p>Last updated 12.04.23</p>
-    <br>
+    <p><i>Last updated 12.04.23</i></p>
     <img class="image-style" src="../images/2023-04-12-Aurora_Documentation_Video_Still.jpg" alt="Final_Setup" />
-    <br>
     <p>
       In the last week before the final presentation, I did final audiovisual adjustments, installed the Azure Kinect
       with Calvin's help on the scaffolding of the presentation room and calibrated everything to the new setup. I
