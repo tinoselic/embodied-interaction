@@ -1,6 +1,53 @@
 @font-face {
-  font-family: "Jost Regular";
+  font-family: "Jost";
+  src: url("assets/Jost-Light.ttf");
+  font-weight: light;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: url("assets/Jost-LightItalic.ttf");
+  font-weight: light;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Jost";
   src: url("assets/Jost-Regular.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: url("assets/Jost-Italic.ttf");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: url("assets/Jost-SemiBold.ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: url("assets/Jost-SemiBoldItalic.ttf");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: url("assets/Jost-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: url("assets/Jost-BoldItalic.ttf");
+  font-weight: bold;
+  font-style: italic;
 }
 
 * {
@@ -94,7 +141,9 @@ main {
 h1 {
   color: #fff;
   font-size: 24px;
-  font-weight: bold;
+  font-weight: normal;
+  text-transform: uppercase;  
+  letter-spacing: 1px;
 }
 
 h2 {
@@ -107,7 +156,7 @@ h2 {
 h3 {
   color: #fff;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 h4 {
